@@ -108,7 +108,7 @@ def stop_recording():
 def record_to_pcm():
     """
     交互式录音函数（按回车键启停）
-    :return: 成功返回PCM文件绝对路径，失败返回None
+    :return: 成功返回 PCM 文件绝对路径，失败返回 None
     """
     global is_recording
 
@@ -133,6 +133,27 @@ def record_to_pcm():
                 return os.path.abspath(PCM_SAVE_PATH)
             else:
                 return None
+
+
+def toggle_recording():
+    """
+    切换录音状态（用于悬浮窗调用，返回当前状态和 PCM 路径）
+    :return: (is_recording: bool, pcm_path: str or None)
+             如果刚开始录音，返回 (True, None)
+             如果停止录音，返回 (False, pcm_path)
+    """
+    global is_recording
+
+    if not is_recording:
+        # 开始录音
+        start_recording()
+        return True, None
+    else:
+        # 停止录音
+        stop_recording()
+        time.sleep(0.5)  # 等待保存完成
+        pcm_path = os.path.abspath(PCM_SAVE_PATH) if os.path.exists(PCM_SAVE_PATH) else None
+        return False, pcm_path
 
 
 # 运行主函数

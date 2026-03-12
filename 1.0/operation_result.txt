@@ -118,3 +118,41 @@
   "file_path": "C:\\Users\\32302\\Desktop\\测试文件.txt",
   "delete_type": "回收站"
 }
+=== 第1步：delete_dir ===
+{
+  "status": "success",
+  "message": "目录已回收站",
+  "dir_path": "C:\\Users\\32302\\Desktop\\测试文件夹",
+  "delete_type": "回收站"
+}
+=== 第1步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档"
+}
+=== 第2步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档\\2026年"
+}
+=== 第3步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档\\2026年\\项目复盘"
+}
+=== 第4步：create_file ===
+{
+  "status": "success",
+  "message": "文件创建成功（大小：30 字节）",
+  "file_path": "C:\\Users\\32302\\Desktop\\工作文档\\2026年\\项目复盘\\第一季度总结.txt"
+}
+=== 第5步：rename ===
+{
+  "status": "success",
+  "message": "文件重命名成功",
+  "old_path": "C:\\Users\\32302\\Desktop\\工作文档\\2026年\\项目复盘\\第一季度总结.txt",
+  "new_path": "C:\\Users\\32302\\Desktop\\工作文档\\2026年\\项目复盘\\20266第一季度项目复盘.txt"
+}
