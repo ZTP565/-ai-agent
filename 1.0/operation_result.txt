@@ -1,0 +1,120 @@
+
+=== create_file 执行结果 ===
+{
+  "status": "success",
+  "message": "文件创建成功（大小：6 字节）",
+  "file_path": "C:\\Users\\32302\\PycharmProjects\\PythonProject\\Desktop\\random.txt"
+}
+
+=== create_dir 执行结果 ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\测试"
+}
+
+=== 第1步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\测试"
+}
+=== 第2步：create_file ===
+{
+  "status": "success",
+  "message": "文件创建成功（大小：6 字节）",
+  "file_path": "C:\\Users\\32302\\Desktop\\测试\\v测试.txt"
+}
+=== 第1步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\语音识别的文件夹"
+}
+=== 第2步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\语音识别的文件夹\\测试文件夹"
+}
+=== 第3步：create_file ===
+{
+  "status": "success",
+  "message": "文件创建成功（大小：0 字节）",
+  "file_path": "C:\\Users\\32302\\Desktop\\语音识别的文件夹\\测试文件夹\\也没有测试的文件"
+}
+=== 第1步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档"
+}
+=== 第2步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档\\2016年的资本剑侠2006年"
+}
+=== 第3步：create_dir ===
+{
+  "status": "success",
+  "message": "目录已存在（忽略错误）",
+  "dir_path": "C:\\Users\\32302\\Desktop\\工作文档\\2016年的资本剑侠2006年\\项目复盘"
+}
+=== 第4步：create_file ===
+{
+  "status": "success",
+  "message": "文件创建成功（大小：30 字节）",
+  "file_path": "C:\\Users\\32302\\Desktop\\工作文档\\2016年的资本剑侠2006年\\项目复盘\\第一季度总结.txt"
+}
+=== 第5步：rename ===
+{
+  "status": "success",
+  "message": "文件重命名成功",
+  "old_path": "C:\\Users\\32302\\Desktop\\工作文档\\2016年的资本剑侠2006年\\项目复盘\\第一季度总结.txt",
+  "new_path": "C:\\Users\\32302\\Desktop\\工作文档\\2016年的资本剑侠2006年\\项目复盘\\2016第一季度项目复盘.txt"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "failed",
+  "message": "目录不存在：C:\\Users\\32302\\Desktop\\语音识别"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "failed",
+  "message": "目录非空（禁止递归删除）：C:\\Users\\32302\\Desktop\\语音识别的文件夹 | 请设置recursive=True"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "failed",
+  "message": "目录不存在：C:\\Users\\32302\\Desktop\\因为语音识别的文件夹"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "failed",
+  "message": "目录不存在：C:\\Users\\32302\\Desktop\\因为语音识别的文件夹"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "failed",
+  "message": "删除目录失败：name 'shutil' is not defined | 目标路径：C:\\Users\\32302\\Desktop\\语音识别"
+}
+=== 第1步：delete_dir ===
+{
+  "status": "success",
+  "message": "目录已永久删除",
+  "dir_path": "C:\\Users\\32302\\Desktop\\语音识别",
+  "delete_type": "永久删除"
+}
+=== 第1步：delete_file ===
+{
+  "status": "failed",
+  "message": "文件不存在：C:\\Users\\32302\\Desktop\\测试文件"
+}
+=== 第1步：delete_file ===
+{
+  "status": "success",
+  "message": "文件已回收站",
+  "file_path": "C:\\Users\\32302\\Desktop\\测试文件.txt",
+  "delete_type": "回收站"
+}
